@@ -1,6 +1,6 @@
 body {
   background-color: rgb(108, 125, 156);
-  font-family: "Gill Sans", sans-serif;
+  font-family: 'Gill Sans', sans-serif;
   color: white;
 }
 
@@ -44,7 +44,7 @@ a:visited {
 #banner {
   height: 200px;
   width: 100%;
-  background: url("../images/cycling-dark-bicycle.jpg");
+  background: url('../images/cycling-dark-bicycle.jpg');
   background-size: fixed;
   text-align: center;
   position: relative;
@@ -96,6 +96,23 @@ p {
   background-color: teal;
 }
 
+img {
+  height: 95%;
+  width: 98%;
+}
+
+#project-1 {
+  height: 500px;
+  width: 800px;
+}
+
+#project-2,
+#project-3,
+#project-4 {
+  height: 300px;
+  width: 400px;
+}
+
 ul {
   margin-top: 15px;
   display: flex;
@@ -131,8 +148,12 @@ footer {
     margin: 50px;
   }
 
-  #project-1 a img {
-    content: url("https://via.placeholder.com/250?text=Here+is+my+fourth+project");
+  #project-1,
+  #project-2,
+  #project-3,
+  #project-4 {
+    height: 150px;
+    width: 200px;
   }
 }
 
