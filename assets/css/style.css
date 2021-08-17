@@ -94,11 +94,13 @@ p {
   border: solid rgb(10, 22, 43) 5px;
   border-radius: 15px;
   background-color: teal;
+  text-align: center;
 }
 
 img {
-  height: 95%;
+  height: 75%;
   width: 98%;
+  border-radius: 15px;
 }
 
 #project-1 {
