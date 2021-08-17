@@ -1,0 +1,193 @@
+body {
+  background-color: rgb(108, 125, 156);
+  font-family: "Gill Sans", sans-serif;
+  color: white;
+}
+
+header {
+  background-color: rgb(73, 108, 141);
+  height: 50px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+a {
+  font-size: 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  padding: 5px;
+}
+
+nav li {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+a {
+  color: rgb(57, 161, 209);
+}
+
+a:visited {
+  color: rgba(135, 190, 194, 0.815);
+}
+
+#banner {
+  height: 200px;
+  width: 100%;
+  background: url("../images/cycling-dark-bicycle.jpg");
+  background-size: fixed;
+  text-align: center;
+  position: relative;
+}
+
+#me-image {
+  border-radius: 50%;
+  height: 175px;
+  width: 175px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card {
+  position: relative;
+  margin: 50px 100px;
+  display: flex;
+}
+
+.card-title {
+  margin-right: 50px;
+  padding-right: 25px;
+  border-right: solid rgb(0, 255, 213) 2px;
+}
+
+h2 {
+  width: 100px;
+  font-size: 20px;
+}
+
+p {
+  line-height: 25px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  margin: 10px;
+  padding: 5px;
+  border: solid rgb(10, 22, 43) 5px;
+  border-radius: 15px;
+  background-color: teal;
+}
+
+ul {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(73, 108, 141);
+}
+
+/* responseive design for iPad/table */
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+  #banner {
+    background-size: 450px;
+    height: 175px;
+  }
+
+  #me-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .card {
+    margin: 50px;
+  }
+
+  #project-1 a img {
+    content: url("https://via.placeholder.com/250?text=Here+is+my+fourth+project");
+  }
+}
+
+/* responseive design for mobile phone */
+@media screen and (max-width: 600px) {
+  h1 {
+    display: block;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  nav {
+    float: none;
+    display: inline-block;
+  }
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 0;
+  }
+  #banner {
+    background-size: 350px;
+    height: 135px;
+  }
+  #me-image {
+    height: 125px;
+    width: 125px;
+  }
+
+  .card {
+    margin: 25px;
+    flex-direction: column;
+  }
+  .card-title {
+    border-right: none;
+    border-bottom: solid rgb(0, 255, 213) 2px;
+  }
+  h2 {
+    width: 200px;
+  }
+  p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  a {
+    font-size: 15px;
+  }
+
+  #contact ul {
+    justify-content: flex-start;
+  }
+  #contact ul li {
+    margin-right: 15px;
+  }
+}
